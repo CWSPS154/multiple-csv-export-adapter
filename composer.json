@@ -1,0 +1,21 @@
+{
+    "name": "cwsps154/multiple-csv-export-adapter",
+    "description": "Magento 2 module which help you to export data within multiple CSV",
+    "type": "magento2-module",
+    "license": "MIT",
+    "version": "0.0.1",
+    "require": {
+        "php": "~8.1.0||~8.2.0||~8.3.0",
+        "magento/framework": "103.0.*",
+        "magento/module-backend": "102.0.*",
+        "magento/module-import-export": "101.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CWSPS154\\MultipleCsvExportAdapter\\": ""
+        }
+    }
+}

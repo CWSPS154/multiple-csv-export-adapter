@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright CWSPS154. All rights reserved.
+  ~ @auth CWSPS154
+  ~ @link  https://github.com/CWSPS154
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ImportExport\Model\Export\Consumer">
+        <plugin name="multiple_csv_adapter_export_consumer_plugin" type="CWSPS154\MultipleCsvExportAdapter\Plugin\Model\Export\Consumer"/>
+    </type>
+    <type name="Magento\ImportExport\Controller\Adminhtml\Export\Export">
+        <plugin name="multiple_csv_adapter_export_export_plugin" type="CWSPS154\MultipleCsvExportAdapter\Plugin\Controller\Adminhtml\Export\Export"/>
+    </type>
+    <type name="Magento\ImportExport\Model\Export\Entity\ExportInfoFactory">
+        <plugin name="multiple_csv_adapter_export_export_info_factory_plugin" type="CWSPS154\MultipleCsvExportAdapter\Plugin\Model\Export\Entity\ExportInfoFactory"/>
+    </type>
+    <type name="Magento\ImportExport\Api\ExportManagementInterface">
+        <plugin name="multiple_csv_adapter_export_export_manager_plugin" type="CWSPS154\MultipleCsvExportAdapter\Plugin\Controller\Adminhtml\Export\ExportManagement"/>
+    </type>
+    <preference for="Magento\ImportExport\Model\Export" type="CWSPS154\MultipleCsvExportAdapter\Preference\Model\Export" />
+    <preference for="Magento\ImportExport\Block\Adminhtml\Export\Edit\Form" type="CWSPS154\MultipleCsvExportAdapter\Preference\Block\Adminhtml\Export\Edit\Form" />
+    <preference for="Magento\ImportExport\Api\Data\LocalizedExportInfoInterface" type="CWSPS154\MultipleCsvExportAdapter\Preference\Model\Export\Entity\ExportExtendInfo" />
+    <preference for="Magento\ImportExport\Api\Data\ExportInfoInterface" type="CWSPS154\MultipleCsvExportAdapter\Preference\Model\Export\Entity\ExportExtendInfo" />
+    <preference for="CWSPS154\MultipleCsvExportAdapter\Api\Data\ExportExtendInfoInterface" type="CWSPS154\MultipleCsvExportAdapter\Preference\Model\Export\Entity\ExportExtendInfo" />
+</config>

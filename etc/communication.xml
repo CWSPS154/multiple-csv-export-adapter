@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright CWSPS154. All rights reserved.
+  ~ @auth CWSPS154
+  ~ @link  https://github.com/CWSPS154
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="import_export.export" request="CWSPS154\MultipleCsvExportAdapter\Api\Data\ExportExtendInfoInterface">
+        <handler name="exportProcessor" type="Magento\ImportExport\Model\Export\Consumer" method="process" />
+    </topic>
+</config>
