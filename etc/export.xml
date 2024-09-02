@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <!--
-  ~ @package     EGC Supply
-  ~ @author      Codilar Technologies
-  ~ @license     https://opensource.org/licenses/OSL-3.0 Open Software License v. 3.0 (OSL-3.0)
-  ~ @link        http://www.codilar.com/
+  ~ Copyright CWSPS154. All rights reserved.
+  ~ @auth CWSPS154
+  ~ @link  https://github.com/CWSPS154
   -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_ImportExport:etc/export.xsd">
     <fileFormat name="multiple_csv" label="Multiple CSV" model="CWSPS154\MultipleCsvExportAdapter\Model\Export\Adapter\MultipleCsv"/>
